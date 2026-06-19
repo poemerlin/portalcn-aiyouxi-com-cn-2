@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://poemerlin.github.io/portalcn-aiyouxi-com-cn-2/sitemap.xml
