@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xbet · 资料索引与信息整理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f6f7f9;
+            color: #1e1e1e;
+            line-height: 1.7;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(135deg, #0b1a2e 0%, #1a2f44 100%);
+            color: #dce5ed;
+            padding: 4rem 2rem 3.2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.6rem;
+            color: #f0f4fa;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            max-width: 640px;
+            margin: 0 auto;
+            opacity: 0.82;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        .hero .sub a {
+            color: #94b9e6;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(148, 185, 230, 0.3);
+            transition: border-color 0.2s;
+        }
+
+        .hero .sub a:hover {
+            border-bottom-color: #94b9e6;
+        }
+
+        /* 正文浅色区 */
+        .main-container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 2.8rem 1.8rem 4rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            background: #ffffff;
+            padding: 1.6rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            margin-bottom: 2.4rem;
+            border-left: 4px solid #1f4a7a;
+        }
+
+        .intro p {
+            margin-bottom: 0.8rem;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section {
+            background: #ffffff;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.8rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #0f2a41;
+            letter-spacing: -0.01em;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 1.2rem 0 0.6rem;
+            color: #1f3f5c;
+        }
+
+        .section p {
+            margin-bottom: 0.9rem;
+        }
+
+        .section ul {
+            padding-left: 1.3rem;
+            margin: 0.8rem 0;
+        }
+
+        .section li {
+            margin-bottom: 0.4rem;
+        }
+
+        .quote-block {
+            background: #f0f4fa;
+            border-radius: 10px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.4rem 0;
+            border-left: 5px solid #2b6a9e;
+            font-style: normal;
+            color: #1d3143;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.3rem;
+        }
+
+        .quote-block .source {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 0.3rem;
+        }
+
+        .emoji-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .emoji-list li {
+            padding-left: 1.8rem;
+            position: relative;
+            margin-bottom: 0.6rem;
+        }
+
+        .emoji-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #2b6a9e;
+            font-weight: bold;
+        }
+
+        .faq-item {
+            margin: 1.2rem 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #0f2a41;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin-bottom: 0.2rem;
+        }
+
+        .action-line {
+            background: #e8edf4;
+            padding: 1.4rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2.2rem;
+            font-size: 1.05rem;
+            border: 1px solid #d9e0ea;
+        }
+
+        .action-line a {
+            color: #1a4f7a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border 0.15s;
+        }
+
+        .action-line a:hover {
+            border-bottom-color: #1a4f7a;
+        }
+
+        .footnote {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #5d6a7e;
+            border-top: 1px solid #d6dee8;
+            padding-top: 1.2rem;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+
+            .main-container {
+                padding: 1.6rem 1rem 3rem;
+            }
+
+            .section, .intro, .action-line {
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>信息索引 · 平台资料整理</h1>
+        <div class="sub">
+            从结构化的资讯归档入手，梳理一个综合性服务平台的脉络。<br>
+            本篇围绕 <a href="https://sporthub-1xbet.com">1xbet</a> 展开多维度笔记。
+        </div>
+    </header>
+
+    <!-- 正文区 -->
+    <div class="main-container">
+
+        <!-- 导语段 -->
+        <div class="intro">
+            <p>这份页面更像是一份整理笔记—— 将分散在不同来源里关于 <strong>1xbet</strong> 的功能模块、应用场景和常见疑问汇总到一起，方便快速查阅。资料收集侧重客观描述，不做主观推荐，仅呈现信息结构。</p>
+            <p>如果你希望直接浏览该平台的主界面，可从这里出发：<a href="https://sporthub-1xbet.com">1xbet</a> 的首页聚合了体育、娱乐、金融等板块的入口。以下内容基于公开资料与用户常见反馈整理。</p>
+        </div>
+
+        <!-- 特点与模块 -->
+        <div class="section">
+            <h2>平台模块与信息分类</h2>
+            <p>从索引角度看，<strong>1xbet</strong> 的页面结构大致分为几个主要区域：体育赛事预览、实时赔率变动、游戏娱乐目录、以及账户管理工具。每个区域都有独立的导航层级，方便用户按兴趣筛选。</p>
+
+            <h3>体育板块</h3>
+            <p>覆盖了足球、篮球、网球、电子竞技等主流项目。资料显示其数据更新频率较高，且提供多种玩法选项。部分赛事还配有统计面板和历史交锋记录，适合赛前信息收集。</p>
+
+            <h3>娱乐与即时内容</h3>
+            <p>除了体育外，还有虚拟体育、棋牌、老虎机等分类。根据索引记录，这些子页面通常以缩略图和短介绍排列，操作路径较短。</p>
+
+            <div class="quote-block">
+                <p>“在整理过程中发现，用户最常检索的关键词包括：赔率对比、注册流程、支付方式、以及特定赛事的投注上限。这些信息在帮助中心或常见问题页面中都有对应条目。”</p>
+                <div class="source">—— 平台信息索引笔记 · 2025</div>
+            </div>
+
+            <p>值得一提的是，<a href="https://sporthub-1xbet.com">1xbet</a> 的界面支持多语言切换，对于非英语使用者相对友好。这在收集海外信息时减少了阅读障碍。</p>
+        </div>
+
+        <!-- 引用提示 / 使用场景 -->
+        <div class="section">
+            <h2>使用场景与索引提示</h2>
+            <p>根据多位用户分享的体验，以下是整理出的几个常见使用场景：</p>
+            <ul class="emoji-list">
+                <li>赛前资料收集：查看近期对战数据、球队状态、天气因素等。</li>
+                <li>实时追踪：在比赛进行时关注赔率浮动和统计数字变化。</li>
+                <li>多账户管理：部分用户同时关注不同币种的结算方式。</li>
+                <li>新手引导：检索“如何开户”、“最低存款”、“提现周期”等条目。</li>
+            </ul>
+
+            <div class="faq-item">
+                <strong>FAQ 摘要 · 常见问题索引</strong>
+                <p><strong>Q：</strong> 是否有官方的帮助文档或操作指南？</p>
+                <p><strong>A：</strong> 在 <a href="https://sporthub-1xbet.com">1xbet</a> 的底部导航以及“帮助”子页面中可以找到分类 FAQ，涵盖账户、支付、投注规则等。</p>
+            </div>
+            <div class="faq-item">
+                <p><strong>Q：</strong> 平台的界面能否自定义显示语言？</p>
+                <p><strong>A：</strong> 根据索引记录，目前支持超过 60 种语言，可以在页面顶部的语言选择器内切换。</p>
+            </div>
+            <div class="faq-item">
+                <p><strong>Q：</strong> 移动端适配如何？</p>
+                <p><strong>A：</strong> 有专门的移动网页版本，同时也有原生应用可供下载。功能模块与桌面端基本一致。</p>
+            </div>
+        </div>
+
+        <!-- 温和的访问句（自然嵌入链接） -->
+        <div class="action-line">
+            ▸ 若你需要更详细的结构化信息，可以直接浏览 <a href="https://sporthub-1xbet.com">1xbet</a> 的主站，按板块逐项查阅。<br>
+            <span style="font-size:0.92rem; opacity:0.7;">以上内容基于公开资料整理，仅供信息索引参考。</span>
+        </div>
+
+        <div class="footnote">
+            <span>整理日期：2025 · 信息源：公开页面与用户社区</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
